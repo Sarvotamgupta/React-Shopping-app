@@ -23,5 +23,11 @@
 }
 
 .cart-badge.zero {
-  background-color: gray; /* You can change the color to indicate zero items */
+  background-color: gray;
+}
+
+.navbar-logo {
+  height: 58px;
+  width: auto;
+  margin-right: 3px;
 }

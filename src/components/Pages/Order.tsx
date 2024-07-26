@@ -34,7 +34,9 @@ const Order = () => {
                   }`}
                 >
                   <h3>
-                    {index === 0 ? "New Order" : `Previous Order #${index}`}
+                    {index === 0
+                      ? "New Placed Order"
+                      : `Previous Placed Order : ${index}`}
                   </h3>
                   <div className="order-items">
                     {order.map((item) => (

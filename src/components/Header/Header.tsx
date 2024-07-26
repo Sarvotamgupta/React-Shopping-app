@@ -4,7 +4,7 @@ import "./Header.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { useCart } from "../Pages/CartContext.tsx"; // Adjust the import path
-
+import logo from "../Images/Store.jpg";
 const Header = () => {
   const { getTotalItems } = useCart(); // Use the getTotalItems function from CartContext
   const totalItems = getTotalItems();
@@ -13,6 +13,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
+          <img src={logo} alt="sunrise-market-image" className="navbar-logo" />
           Sunrise Market
         </Link>
         <button

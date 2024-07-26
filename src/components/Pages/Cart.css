@@ -3,6 +3,7 @@
   justify-content: center;
   padding: 20px;
   background-color: #f4f4f4;
+  padding: 3% 0 7% 0;
 }
 
 .cart-content {
@@ -35,7 +36,6 @@
 
 .cart-item {
   display: flex;
-  /* align-items: center; */
   margin-bottom: 15px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
@@ -150,11 +150,15 @@ h2 {
   font-weight: 600;
 }
 .total-amount span {
-  /* color: #007bff; */
   color: red;
 }
 .cart-empty-items {
   margin: 6rem;
   opacity: 0.7;
   font-style: italic;
+}
+
+.shopping-cart {
+  background-color: #f4f4f4;
+  padding-top: 2rem;
 }

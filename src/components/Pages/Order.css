@@ -1,4 +1,3 @@
-/* Order.css */
 .order-container {
   padding: 20px;
   max-width: 1200px;
@@ -27,7 +26,7 @@
 }
 
 .order-summary-container {
-  flex: 1; /* Take up remaining space */
+  flex: 1;
 }
 
 .order-box-container {
@@ -49,11 +48,11 @@
 }
 
 .new-order {
-  border-color: #28a745; /* Green border for new orders */
+  border-color: #28a745;
 }
 
 .previous-order {
-  border-color: #17a2b8; /* Blue border for previous orders */
+  border-color: #17a2b8;
 }
 
 .order-items {

@@ -35,21 +35,15 @@ interface CartProviderProps {
 
 // CartProvider component
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
-  const [cart, setCart] = useState<CartItem[]>([]);
-  const [orderHistory, setOrderHistory] = useState<CartItem[][]>([]);
-
-  // Load cart and order history from local storage
-  useEffect(() => {
+  const [cart, setCart] = useState<CartItem[]>(() => {
     const storedCart = localStorage.getItem("cart");
-    const storedOrderHistory = localStorage.getItem("orderHistory");
+    return storedCart ? JSON.parse(storedCart) : [];
+  });
 
-    if (storedCart) {
-      setCart(JSON.parse(storedCart));
-    }
-    if (storedOrderHistory) {
-      setOrderHistory(JSON.parse(storedOrderHistory));
-    }
-  }, []);
+  const [orderHistory, setOrderHistory] = useState<CartItem[][]>(() => {
+    const storedOrderHistory = localStorage.getItem("orderHistory");
+    return storedOrderHistory ? JSON.parse(storedOrderHistory) : [];
+  });
 
   // Save cart and order history to local storage
   useEffect(() => {

@@ -1,0 +1,160 @@
+.cart-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.cart-items,
+.cart-summary {
+  width: 48%;
+}
+
+.cart-items {
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+}
+
+.cart-items h2,
+.cart-summary h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-item {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  gap: 5rem;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-size: 1.2em;
+  margin: 0;
+  color: #333;
+}
+
+.cart-item-price {
+  font-size: 1em;
+  color: black;
+}
+
+.cart-item-quantity {
+  display: flex;
+  justify-content: left;
+  margin-top: 14px;
+}
+
+.quantity-button {
+  background-color: #9d9d9d;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 3px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1em;
+}
+
+.quantity-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.quantity-count {
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.cart-summary {
+  padding-left: 20px;
+}
+
+.cart-summary p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.cart-summary-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.cart-summary-item label {
+  font-weight: bold;
+}
+
+.checkout-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.checkout-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.checkout-button:hover:enabled {
+  background-color: #218838;
+}
+
+.total-amount {
+  color: red;
+  font-weight: bolder;
+}
+
+p {
+  margin: 0;
+  justify-content: left;
+  margin-left: 1rem;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+.total-amount span {
+  /* color: #007bff; */
+  color: red;
+}
+.cart-empty-items {
+  margin: 6rem;
+  opacity: 0.7;
+  font-style: italic;
+}

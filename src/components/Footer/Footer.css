@@ -1,0 +1,65 @@
+/* Ensure the footer is always at the bottom of the page */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; /* Top and bottom padding */
+  width: 100%;
+  margin-top: auto; /* Ensures footer sticks to the bottom of the page */
+  /* position: fixed; */
+  /* bottom: 0; */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Horizontal padding */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+}
+
+.footer-links li {
+  margin: 0 15px; /* Increased margin for better spacing */
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 5px 10px; /* Added padding for better click area */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer-links a:hover {
+  color: #ddd; /* Slightly lighter color on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+  border-radius: 4px; /* Rounded corners on hover */
+}

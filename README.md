@@ -1,4 +1,4 @@
-**Sunrise Market Website link** - **https://sarvotamgupta.github.io/React-Shopping-app/**
+**Sunrise Market Demo link** - **https://sarvotamgupta.github.io/React-Shopping-app/**
 
 
 # Getting Started with Create React App

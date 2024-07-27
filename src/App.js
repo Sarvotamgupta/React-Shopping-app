@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header.tsx";
 import Body from "./components/Body/Body.tsx";
@@ -18,6 +23,7 @@ function App() {
           <Route path="/products" element={<Body />} />
           <Route path="/orders" element={<Order />} />
           <Route path="/carts" element={<Cart />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Shopping-app/static/css/main.d73b7d22.css",
-    "main.js": "/React-Shopping-app/static/js/main.009e84d2.js",
+    "main.css": "/React-Shopping-app/static/css/main.8bc87452.css",
+    "main.js": "/React-Shopping-app/static/js/main.81237fcb.js",
     "static/js/453.ed3810f9.chunk.js": "/React-Shopping-app/static/js/453.ed3810f9.chunk.js",
     "static/media/bootstrap-icons.woff?": "/React-Shopping-app/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/intermediate-composite-basketball.jpg": "/React-Shopping-app/static/media/intermediate-composite-basketball.f2b4426438b4bee74020.jpg",
@@ -24,12 +24,12 @@
     "static/media/smart-watch.jpg": "/React-Shopping-app/static/media/smart-watch.61d010bbd622afb9eb4c.jpg",
     "static/media/blue-t-shirt.avif": "/React-Shopping-app/static/media/blue-t-shirt.c3111c8b4c2f8af10eaf.avif",
     "index.html": "/React-Shopping-app/index.html",
-    "main.d73b7d22.css.map": "/React-Shopping-app/static/css/main.d73b7d22.css.map",
-    "main.009e84d2.js.map": "/React-Shopping-app/static/js/main.009e84d2.js.map",
+    "main.8bc87452.css.map": "/React-Shopping-app/static/css/main.8bc87452.css.map",
+    "main.81237fcb.js.map": "/React-Shopping-app/static/js/main.81237fcb.js.map",
     "453.ed3810f9.chunk.js.map": "/React-Shopping-app/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d73b7d22.css",
-    "static/js/main.009e84d2.js"
+    "static/css/main.8bc87452.css",
+    "static/js/main.81237fcb.js"
   ]
 }

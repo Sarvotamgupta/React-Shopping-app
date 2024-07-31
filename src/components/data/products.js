@@ -29,7 +29,7 @@ const items = [
   { id: 7, name: "Water Kettle", price: 25.15, image: image7 },
   { id: 8, name: "Orange T-Shirt", price: 9.99, image: image8 },
   { id: 9, name: "Watch", price: 5.25, image: image9 },
-  { id: 10, name: "Headphone Noise Cancelling", price: 65.55, image: image10 },
+  { id: 10, name: "Headphone", price: 65.55, image: image10 },
   { id: 11, name: "Laptop", price: 599, image: image11 },
   { id: 12, name: "Smart Watch", price: 39.99, image: image12 },
   { id: 13, name: "Tablet", price: 39.99, image: image13 },

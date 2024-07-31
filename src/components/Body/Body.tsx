@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import items from "../data/products";
-import { useCart } from "../Pages/CartContext.tsx"; // Import useCart
+import { useCart } from "../Pages/CartContext.tsx";
 import "./Body.css";
 
 const Body = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOption, setSortOption] = useState("");
-  const [notification, setNotification] = useState<string | null>(null); // State for notification
-  const { addToCart } = useCart(); // Use addToCart from CartContext
+  const [notification, setNotification] = useState<string | null>(null);
+  const { addToCart } = useCart();
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
@@ -36,12 +36,12 @@ const Body = () => {
   });
 
   const handleAddToCart = (item) => {
-    const cartItem = { ...item, quantity: 1 }; // Ensure quantity is included
+    const cartItem = { ...item, quantity: 1 };
     addToCart(cartItem);
     setNotification(`${item.name} added to the cart`);
     setTimeout(() => {
       setNotification(null);
-    }, 3000); // Clear notification after 3 seconds
+    }, 3000);
   };
 
   const handleCloseNotification = () => {

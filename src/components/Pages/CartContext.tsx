@@ -6,7 +6,6 @@ import React, {
   useEffect,
 } from "react";
 
-// Define the CartItem type
 interface CartItem {
   id: number;
   name: string;
@@ -15,7 +14,6 @@ interface CartItem {
   quantity: number;
 }
 
-// Define the CartContextType
 interface CartContextType {
   cart: CartItem[];
   addToCart: (item: CartItem) => void;
@@ -25,15 +23,12 @@ interface CartContextType {
   getTotalItems: () => number;
 }
 
-// Create a Context with default values
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-// Define the CartProvider's props type
 interface CartProviderProps {
   children: ReactNode;
 }
 
-// CartProvider component
 export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   const [cart, setCart] = useState<CartItem[]>(() => {
     const storedCart = localStorage.getItem("cart");
@@ -76,13 +71,12 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
             ? { ...item, quantity: item.quantity + quantityChange }
             : item
         )
-        .filter((item) => item.quantity > 0); // Remove items with quantity <= 0
+        .filter((item) => item.quantity > 0);
     });
   };
 
   // Function to handle checkout
   const checkout = () => {
-    // Save current cart to order history
     if (cart.length > 0) {
       setOrderHistory((prevHistory) => [cart, ...prevHistory]);
       setCart([]);
@@ -93,7 +87,6 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     return cart.reduce((total, item) => total + item.quantity, 0);
   };
 
-  // Provide the context value
   return (
     <CartContext.Provider
       value={{
@@ -110,7 +103,6 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
   );
 };
 
-// Custom hook to use CartContext
 export const useCart = () => {
   const context = useContext(CartContext);
   if (context === undefined) {

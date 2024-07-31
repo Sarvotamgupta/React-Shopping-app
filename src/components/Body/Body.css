@@ -185,6 +185,11 @@ p {
   .card-container {
     gap: 1rem;
   }
+  .notification {
+    padding: 10px 10px;
+    left: 50%;
+    right: -22%;
+  }
 }
 @media (max-width: 376px) {
   .searchText,

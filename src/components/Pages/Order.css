@@ -113,7 +113,13 @@
   color: black;
 }
 .cart-empty-message {
-  margin: 12rem;
+  margin: 10rem 0;
   opacity: 0.5;
   font-style: italic;
+}
+
+@media (max-width: 376px) {
+  .print-button {
+    display: none;
+  }
 }

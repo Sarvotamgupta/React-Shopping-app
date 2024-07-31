@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { useCart } from "../Pages/CartContext.tsx"; // Adjust the import path
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { useCart } from "../Pages/CartContext.tsx";
 import logo from "../Images/Store.jpg";
+
 const Header = () => {
-  const { getTotalItems } = useCart(); // Use the getTotalItems function from CartContext
+  const { getTotalItems } = useCart();
   const totalItems = getTotalItems();
 
   return (
@@ -28,7 +30,7 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link
                 className="nav-link active"
@@ -48,7 +50,7 @@ const Header = () => {
                 Carts
               </Link>
             </li>
-            <li className="nav-item position-relative">
+            <li className="nav-item position-relative cart-nav-item">
               <Link className="nav-link active" to="/carts">
                 <i className="bi bi-cart-fill"></i>
                 <span

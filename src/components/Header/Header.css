@@ -10,6 +10,7 @@
 .navbar > .container-fluid {
   margin-left: 6rem;
 }
+
 .cart-badge {
   position: absolute;
   top: -4px;
@@ -30,4 +31,65 @@
   height: 58px;
   width: auto;
   margin-right: 3px;
+}
+
+@media (min-width: 1200px) {
+  .navbar-expand-lg .navbar-collapse {
+    padding: 1rem 4rem 1rem 0rem;
+  }
+  .navbar > .container-fluid {
+    margin-left: 6rem;
+  }
+  .cart-badge {
+    font-size: 10px;
+  }
+  .navbar-logo {
+    height: 58px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar-expand-lg .navbar-collapse {
+    padding: 1rem 2rem;
+  }
+  .navbar > .container-fluid {
+    margin-left: 4rem;
+  }
+  .cart-badge {
+    font-size: 10px;
+  }
+  .navbar-logo {
+    height: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cart-nav-item {
+    display: none;
+  }
+  .nav-item {
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-expand-lg .navbar-collapse {
+    padding: 1rem 1rem;
+  }
+  .navbar > .container-fluid {
+    margin-left: 2rem;
+  }
+  .cart-badge {
+    font-size: 8px;
+    padding: 1px 4px;
+  }
+  .navbar-logo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar > .container-fluid {
+    margin-left: 0rem;
+  }
 }
